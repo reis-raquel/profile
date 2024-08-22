@@ -4,44 +4,95 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
     <title>About Raquel Reis</title>
   </head>
   <body>
-    <a href="index.html" class="homepage-link">Back to homepage</a>
-    <h1>About me</h1>
-    <h3>Front-end developer from Helsinki, Finland</h3>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Raquel Reis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-center">About me</h1>
+    <h3 class="text-center">Front-end developer, from Helsinki, Finland</h3>
     <div class="about-paragraphs">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
-        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
-        blanditiis harum.
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
-        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
-        blanditiis harum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
-        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
-        blanditiis harum.
-        <br />
-        <br />
+      <p class="text-center p-3">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
         aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
         alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
         blanditiis harum.
       </p>
     </div>
-    <div id="contact">
-      <h2>📮 Contact me</h2>
-      <a href="mailto:raquel.a.reis@gmail.com" class="email-link">
-        raquel.a.reis@gmail.com</a
-      >
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="images/yoga.png"
+            alt="yoga app"
+            class="img-fluid rounded p-2 shadow"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="images/weather.png"
+            alt="weather app"
+            class="img-fluid rounded p-2 shadow"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="images/yogurt.png"
+            alt="yogurt app"
+            class="img-fluid rounded p-2 shadow"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="mt-5 mb-5">
+      <h2 class="text-center">📮 Contact me</h2>
+      <a href="mailto:raquel.a.reis@gmail.com" class="email-link mt-3">
+        raquel.a.reis@gmail.com
+      </a>
     </div>
   </body>
 </html>

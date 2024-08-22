@@ -1,113 +1,135 @@
-mas <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <title>Raquel Reis Front-end developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Raquel Reis</title>
   </head>
   <body>
-    
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="about.html">Raquel Reis</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="about.html">About me</a>
-          <a class="nav-item nav-link" href="about.html">Contact me</a>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Raquel Reis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Contact me</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <h2>
-      👋 Hi
-     
-      I am
-    </h2>
-    <h1>Raquel Reis</h1>
-    <h3>☃️Front-end developer, based in Finland</h3>
-    <div class="navigation-links">
-      <a href="about.html#contact" class="contact-link">Contact me</a>
-      <a href="about.html" class="about-link">About me</a>
+
+    <h2 class="text-center">👋 Hi, I'm</h2>
+    <h1 class="text-center">Raquel Reis</h1>
+    <h3 class="text-center">Front-end developer, based in Finland</h3>
+    <div class="navigation-links mb-5">
+      <a href="about.html#contact" class="primary-link">Contact me</a>
+      <a href="about.html" class="secondary-link">About me</a>
     </div>
-    <div class="container">
 
-  <div class="row">
-        <div class="col-sm-6">
-          <img src="images/yoga.png"class="img-fluid rounded"></div>
-      
-
-        <div class="col-sm-6">
-          <h2>Yoga App</h2>
-          <p>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6 order-2 order-md-1">
+          <img
+            src="images/yoga.png"
+            alt="yoga app"
+            class="img-fluid-1 rounded"
+          />
+        </div>
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6 order-1 order-md-2">
+          <h2 class="mb-3">Yoga App</h2>
+          <p class="mb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
             eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore
+            explicabo eum dolore.
           </p>
-        <a href="#" class="btn btn-primary btn-lg home-links" title="launch yoga app"
-          >Yoga App</a>
+
+          <div class="my-5">
+            <a href="#" class="primary-link">Launch Yoga App</a>
+          </div>
+          <div class="clearfix"></div>
         </div>
-  </div>
-
-    <div class="row">
-    <div class="col-sm-6">
-        <h2>Weather App</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-          eos eveniet alias temporibus deserunt veritatis minima fugiat
-          explicabo eum dolore.
-        </p>
-          <a href="#" class="btn btn-primary btn-lg home-links" title="launch yoga app"
-          >Weather App</a>
+      </div>
     </div>
 
-    <div class="col-sm-6">
-         <img src="images/weather.png"class="img-fluid rounded" >
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+          <h2 class="mb-3">Weather App</h2>
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+          </p>
+          <div class="my-5">
+            <a href="#" class="primary-link">Launch Weather App</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+          <img
+            src="images/weather.png"
+            alt="weather app"
+            class="img-fluid-1 rounded"
+          />
+        </div>
+      </div>
     </div>
 
-
-    <div class="row mt-5">
-
-      <div class="col-sm-6">
-        <img src="images/yogurt.png" class="img-fluid rounded"></div>
-
-        <div class="col-sm-6">
-        <h2>yogurt</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-          eos eveniet alias temporibus deserunt veritatis minima fugiat
-          explicabo eum dolore
-        </p>
-        <a href="#" class="btn btn-primary btn-lg home-links" title="launch yoga app"
-        >Weather App</a>
-          
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6 order-2 order-md-1">
+          <img
+            src="images/yogurt.png"
+            alt="yogurt app"
+            class="img-fluid-1 rounded"
+          />
+        </div>
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6 order-1 order-md-2">
+          <h2 class="mb-3">Yogurt App</h2>
+          <p class="mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+            eos eveniet alias temporibus deserunt veritatis minima fugiat
+            explicabo eum dolore.
+          </p>
+          <div class="my-5">
+            <a href="#" class="primary-link">Launch Yogurt App</a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
